@@ -1,6 +1,7 @@
 <html>
   <head>
     <title>Youtube Mobile</title>
+    <script src="https://use.fontawesome.com/releases/v5.2.0/js/all.js"></script>
   </head>
   <body>
     <hearder>
@@ -13,8 +14,58 @@
         <i class="fas fa-ellipsis-v"></i>
       </div>
     </hearder>
-    <section class="player"></section>
-    <section class="info"></section>
+
+    <!--Video Player-->
+    <section class="player">
+      <video controls width="250">
+        <source src="./lolvid.mp4" type="video/mp4" />
+      </video>
+    </section>
+    <section class="info">
+      <div class="metadata">
+        <ul class="hashtags">
+          <li>Clone Coding</li>
+          <li>Frontend</li>
+          <li>HTML</li>
+        </ul>
+        <div class="titleAndButton">
+          <span>
+            유투브 모바일 클론코딩. 유투브 비슷하게 따라만들어보기! 이곳은
+            제목인데 매우 긴 제목이 들어오면 어떻게 되는지 기능을 구현해봄!
+          </span>
+          <button class="moreBtn">
+            <i class="fas fa-caret-down"></i>
+          </button>
+        </div>
+        <div class="views">
+          <span class="views">1M vies 1 month ago</span>
+        </div>
+      </div>
+
+      <div class="buttonList">
+        <ul class="actions">
+          <li>
+            <button><i class="fas fa-thumbs-up"></i>1k</button>
+          </li>
+          <li>
+            <button><i class="fas fa-thumbs-down"></i>0</button>
+          </li>
+          <li>
+            <button><i class="fas fa-share"></i>Share</button>
+          </li>
+          <li>
+            <button><i class="fas fa-plus"></i>Save</button>
+          </li>
+          <li>
+            <button><i class="fas fa-flag"></i>Repport</button>
+          </li>
+        </ul>
+      </div>
+      <div class="channelInfo">
+        <i class="fas fa-user-circle"></i>
+        이정원
+      </div>
+    </section>
     <section class="nextVid"></section>
   </body>
 </html>
