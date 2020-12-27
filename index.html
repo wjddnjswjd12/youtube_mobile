@@ -1,7 +1,11 @@
 <html>
   <head>
     <title>Youtube Mobile</title>
-    <script src="https://use.fontawesome.com/releases/v5.2.0/js/all.js"></script>
+    <script
+      src="https://kit.fontawesome.com/2d323a629b.js"
+      crossorigin="anonymous"
+    ></script>
+    <script src="main.js" defer></script>
     <link rel="stylesheet" href="style.css" />
     <link
       rel="stylesheet"
@@ -22,36 +26,38 @@
 
     <!--Video Player-->
     <section class="player">
-      <video controls>
-        <source src="./video/VidForYoutube.mp4" type="video/mp4" />
-      </video>
+      <video controls src="./video/VidForYoutube.mp4"></video>
     </section>
 
-    <!--Channel Information + Meta data -->
-    <section class="info">
-      <div class="metadata">
-        <ul class="hashtags">
-          <li>#Clone Coding</li>
-          <li>#Frontend</li>
-          <li>#HTML</li>
-        </ul>
-        <div class="titleAndButton">
-          <span>
-            유투브 모바일 클론코딩. 유투브 비슷하게 따라만들어보기! 이곳은
-            제목인데 매우 긴 제목이 들어오면 어떻게 되는지 기능을 구현해봄!
-          </span>
-          <button class="moreBtn">
-            <i class="fas fa-caret-down"></i>
-          </button>
+    <div class="infoAndUpNext">
+      <!--Channel Information + Meta data -->
+      <section class="info">
+        <!--Metadata-->
+        <div class="metadata">
+          <ul class="hashtags">
+            <li>#Clone Coding</li>
+            <li>#Frontend</li>
+            <li>#HTML</li>
+          </ul>
+          <div class="titleAndButton">
+            <span class="title clamp">
+              유투브 모바일 클론코딩. 유투브 비슷하게 따라만들어보기! 이곳은
+              제목인데 매우 긴 제목이 들어오면 어떻게 되는지 기능을 구현해봄!
+              길어지면 점점점이 떠야한다~
+            </span>
+            <button class="moreBtn">
+              <i class="fas fa-caret-down"></i>
+            </button>
+          </div>
+          <div class="views">
+            <span class="views">1M views 1 month ago</span>
+          </div>
         </div>
-        <div class="views">
-          <span class="views">1M views 1 month ago</span>
-        </div>
-      </div>
-      <div class="buttonList">
         <ul class="actions">
           <li>
-            <button><i class="fas fa-thumbs-up"></i><span>1k</span></button>
+            <button>
+              <i class="active fas fa-thumbs-up"></i><span>1k</span>
+            </button>
           </li>
           <li>
             <button><i class="fas fa-thumbs-down"></i><span>0</span></button>
@@ -66,59 +72,59 @@
             <button><i class="fas fa-flag"></i><span>Repport</span></button>
           </li>
         </ul>
-      </div>
-      <div class="channelInfo">
-        <div class="metadata">
-          <img src="./image/1.PNG" alt="" />
-          <div class="info">
-            <span class="name">this가든</span>
-            <span class="subscribers">200M subscribers</span>
+        <div class="channelInfo">
+          <div class="metadata">
+            <img src="./image/1.PNG" alt="" />
+            <div class="info">
+              <span class="name">this가든</span>
+              <span class="subscribers">200M subscribers</span>
+            </div>
           </div>
+          <button class="subscribe">Subscribe</button>
         </div>
-        <button class="subscribe">Subscribe</button>
-      </div>
-    </section>
+      </section>
 
-    <!--Next Video Section-->
-    <section class="nextVid">
-      <span class="title">Up next</span>
-      <ul>
-        <li class="vid">
-          <img src="./image/vid1.PNG" alt="" />
-          <div class="info">
-            <span class="title">
-              추억의 남자 아이돌 노래를 싹다 모아봤어|PLAYLIST</span
-            >
-            <span class="channelName">찐막 JJINMAK</span>
-            <span class="views">132만회 6개월 전</span>
-          </div>
-          <button class="moreBtn"><i class="fas fa-ellipsis-v"></i></button>
-        </li>
-        <li class="vid">
-          <img src="./image/vid2.PNG" alt="" />
-          <div class="info">
-            <span class="title">
-              데미지가 1도 안들어가는 미친 탱커가 있다!? 4시즌 최강탱커를 만들고
-              말았습니다</span
-            >
-            <span class="channelName">마재TV</span>
-            <span class="views">71만회 2개월 전</span>
-          </div>
-          <button class="moreBtn"><i class="fas fa-ellipsis-v"></i></button>
-        </li>
-        <li class="vid">
-          <img src="./image/vid3.PNG" alt="" />
-          <div class="info">
-            <span class="title">
-              Rainy Jass: Relaxing Jazz & Bossa Nova Music Radio -24/7 Chill Out
-              music</span
-            >
-            <span class="channelName">Cafe Music BGM channel</span>
-            <span class="views">9만회 1개월 전</span>
-          </div>
-          <button class="moreBtn"><i class="fas fa-ellipsis-v"></i></button>
-        </li>
-      </ul>
-    </section>
+      <!--Next Video Section-->
+      <section class="nextVid">
+        <span class="title">Up next</span>
+        <ul>
+          <li class="vid">
+            <div class="img"><img src="./image/vid1.PNG" alt="" /></div>
+            <div class="info">
+              <span class="title">
+                추억의 남자 아이돌 노래를 싹다 모아봤어|PLAYLIST</span
+              >
+              <span class="channelName">찐막 JJINMAK</span>
+              <span class="views">132만회 6개월 전</span>
+            </div>
+            <button class="moreBtn"><i class="fas fa-ellipsis-v"></i></button>
+          </li>
+          <li class="vid">
+            <div class="img"><img src="./image/vid2.PNG" alt="" /></div>
+            <div class="info">
+              <span class="title">
+                데미지가 1도 안들어가는 미친 탱커가 있다!? 4시즌 최강탱커를
+                만들고 말았습니다</span
+              >
+              <span class="channelName">마재TV</span>
+              <span class="views">71만회 2개월 전</span>
+            </div>
+            <button class="moreBtn"><i class="fas fa-ellipsis-v"></i></button>
+          </li>
+          <li class="vid">
+            <div class="img"><img src="./image/vid3.PNG" alt="" /></div>
+            <div class="info">
+              <span class="title">
+                Rainy Jass: Relaxing Jazz & Bossa Nova Music Radio -24/7 Chill
+                Out music</span
+              >
+              <span class="channelName">Cafe Music BGM channel</span>
+              <span class="views">9만회 1개월 전</span>
+            </div>
+            <button class="moreBtn"><i class="fas fa-ellipsis-v"></i></button>
+          </li>
+        </ul>
+      </section>
+    </div>
   </body>
 </html>
