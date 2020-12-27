@@ -96,3 +96,19 @@ header .icons .fa-search {
 .buttonList span {
   display: block;
 }
+
+.channelInfo {
+  display: flex;
+}
+
+.channelInfo metadata {
+}
+
+.channelInfo img {
+  width: var(--avatar-size);
+  height: var(--avatar-size);
+}
+
+.channelInfo .info {
+  display: inline-block;
+}
