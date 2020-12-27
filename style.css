@@ -99,9 +99,11 @@ header .icons .fa-search {
 
 .channelInfo {
   display: flex;
+  justify-content: space-between;
 }
 
-.channelInfo metadata {
+.channelInfo .metadata {
+  display: flex;
 }
 
 .channelInfo img {
@@ -110,5 +112,16 @@ header .icons .fa-search {
 }
 
 .channelInfo .info {
-  display: inline-block;
+  display: flex;
+  flex-direction: column;
+}
+
+.channelInfo .info span:nth-child(2) {
+  color: var(--grey-dark-color);
+}
+
+.channelInfo button {
+  background: none;
+  border: none;
+  text-transform: uppercase;
 }
