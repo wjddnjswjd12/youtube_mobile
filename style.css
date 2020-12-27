@@ -57,3 +57,42 @@ header .icons .fa-search {
   height: 100%;
   max-width: 1000px;
 }
+
+.metadata ul li {
+  color: var(--blue-color);
+  display: inline;
+}
+
+.titleAndButton {
+  display: flex;
+}
+
+.titleAndButton span {
+  font-size: var(--font-large);
+}
+
+.titleAndButton button {
+  align-self: flex-start;
+  border: none;
+  background: none;
+}
+.views {
+  color: var(--grey-dark-color);
+}
+
+.buttonList ul {
+  display: flex;
+  justify-content: space-around;
+  list-style: none;
+}
+
+.buttonList button {
+  background: none;
+  border: none;
+  font-size: var(--font-large);
+  color: var(--grey-dark-color);
+}
+
+.buttonList span {
+  display: block;
+}
