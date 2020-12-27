@@ -25,6 +25,10 @@
 body {
   font-family: Roboto;
 }
+button {
+  background: none;
+  border: none;
+}
 
 header {
   display: flex;
@@ -46,7 +50,7 @@ header .icons .fa-search {
   margin-right: var(--padding);
 }
 
-/* Video Player */
+/* Video Player section */
 .player {
   text-align: center;
   background: var(--black-color);
@@ -58,6 +62,7 @@ header .icons .fa-search {
   max-width: 1000px;
 }
 
+/* Meta Data + Channel Info section*/
 .metadata ul li {
   color: var(--blue-color);
   display: inline;
@@ -78,6 +83,7 @@ header .icons .fa-search {
 }
 .views {
   color: var(--grey-dark-color);
+  font-size: var(--font-small);
 }
 
 .buttonList ul {
@@ -109,19 +115,74 @@ header .icons .fa-search {
 .channelInfo img {
   width: var(--avatar-size);
   height: var(--avatar-size);
+  border-radius: 70%;
 }
 
 .channelInfo .info {
   display: flex;
   flex-direction: column;
+  margin-left: 10px;
+}
+
+.channelInfo .info span:nth-child(1) {
+  font-size: var(--font-medium);
+  font-weight: bold;
 }
 
 .channelInfo .info span:nth-child(2) {
   color: var(--grey-dark-color);
+  font-size: var(--font-small);
 }
 
 .channelInfo button {
   background: none;
   border: none;
   text-transform: uppercase;
+}
+
+/* Next Video Section */
+
+/*Up Next*/
+.nextVid span.title {
+  color: var(--grey-dark-color);
+}
+
+/* Ul Li */
+.nextVid ul {
+  display: flex;
+  flex-direction: column;
+  list-style: none;
+}
+
+.nextVid li {
+  display: flex;
+  padding: var(--padding);
+}
+
+.nextVid li img {
+  width: 168px;
+  height: 94px;
+}
+
+.nextVid li button {
+  align-self: flex-start;
+  padding: 10px;
+}
+
+.nextVid li .info span {
+  display: block;
+}
+
+.nextVid li .info .title {
+  color: var(--black-color);
+}
+
+.nextVid li .info span:nth-child(2) {
+  color: var(--grey-dark-color);
+  font-size: var(--font-small);
+}
+
+.nextVid li .info span:nth-child(3) {
+  color: var(--grey-dark-color);
+  font-size: var(--font-micro);
 }
