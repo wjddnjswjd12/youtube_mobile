@@ -56,6 +56,13 @@ header {
   font-size: var(--font-large);
   margin: var(--padding-large) var(--padding-medium);
 }
+.navbar_toggleBtn {
+  display: none;
+  position: absolute;
+  right: 32px;
+  top: 10px;
+  color: goldenrod;
+}
 
 @media screen and (max-width: 768px) {
   header {
@@ -67,9 +74,19 @@ header {
   }
 
   .nav {
+    display: none;
     flex-direction: column;
+    width: 100%;
   }
   .nav li {
     margin: var(--padding-small);
+    width: 100%;
+    text-align: center;
+  }
+  .sns {
+    display: none;
+  }
+  .navbar_toggleBtn {
+    display: block;
   }
 }
