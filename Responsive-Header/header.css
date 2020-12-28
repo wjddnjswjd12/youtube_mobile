@@ -1,6 +1,7 @@
 :root {
-  --padding-large: 15px;
-  --padding-medium: 9px;
+  --padding-large: 25px;
+  --padding-medium: 15px;
+  --padding-small: 5px;
   --font-large: 26px;
   --font-medium: 18px;
 }
@@ -16,15 +17,10 @@ body {
 
 header {
   background-color: rgb(0, 0, 61);
-  height: 100px;
+  height: auto;
   display: flex;
   justify-content: space-around;
   align-items: center;
-}
-
-.navAndSns {
-  display: flex;
-  justify-content: space-around;
 }
 
 .logo {
@@ -37,10 +33,28 @@ header {
 
 .nav .item {
   font-size: var(--font-medium);
-  margin: 0 var(--padding-large);
+  margin: var(--padding-large) var(--padding-medium);
 }
 
 .sns i {
   font-size: var(--font-large);
-  margin: 0 var(--padding-large);
+  margin: var(--padding-large) var(--padding-medium);
+}
+
+@media screen and (max-width: 768px) {
+  header {
+    flex-direction: column;
+    align-items: center;
+  }
+  .logo {
+    align-self: flex-start;
+  }
+
+  .nav {
+    display: flex;
+    flex-direction: column;
+  }
+  .nav .item {
+    margin: var(--padding-small);
+  }
 }
