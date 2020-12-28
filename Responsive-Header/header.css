@@ -1,3 +1,15 @@
+:root {
+  --padding-large: 15px;
+  --padding-medium: 9px;
+  --font-large: 26px;
+  --font-medium: 18px;
+}
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
 body {
   color: white;
 }
@@ -10,10 +22,25 @@ header {
   align-items: center;
 }
 
+.navAndSns {
+  display: flex;
+  justify-content: space-around;
+}
+
 .logo {
-  font-size: 26px;
+  font-size: var(--font-large);
 }
 
 .logo i {
   color: darkgoldenrod;
+}
+
+.nav .item {
+  font-size: var(--font-medium);
+  margin: 0 var(--padding-large);
+}
+
+.sns i {
+  font-size: var(--font-large);
+  margin: 0 var(--padding-large);
 }
