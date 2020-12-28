@@ -60,21 +60,23 @@ header {
   display: none;
   position: absolute;
   right: 32px;
-  top: 10px;
+  top: 22px;
+  font-size: var(--font-large);
   color: goldenrod;
 }
 
 @media screen and (max-width: 768px) {
   header {
     flex-direction: column;
-    align-items: center;
+    align-items: flex-start;
   }
   .logo {
-    align-self: flex-start;
+    margin: var(--padding-medium);
   }
 
   .nav {
     display: none;
+    align-items: center;
     flex-direction: column;
     width: 100%;
   }
@@ -85,8 +87,14 @@ header {
   }
   .sns {
     display: none;
+    justify-content: center;
+    width: 100%;
   }
   .navbar_toggleBtn {
     display: block;
+  }
+  .nav.active,
+  .sns.active {
+    display: flex;
   }
 }
